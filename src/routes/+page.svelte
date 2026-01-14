@@ -1,0 +1,83 @@
+<script lang="ts">
+  import logo from '$lib/assets/CMI_logo.png';
+  import { goto } from '$app/navigation';
+
+  function startQuestionnaire() {
+    goto('/questionnaire');
+  }
+</script>
+
+<main class="min-h-screen bg-base-200">
+  <section class="max-w-6xl mx-auto px-4 py-10 md:py-16">
+    <div class="grid gap-8 md:grid-cols-2 items-center">
+      <!-- Brand / image -->
+      <div class="flex justify-center md:justify-start">
+        <div class="card bg-base-100 shadow-2xl w-full max-w-md">
+          <div class="card-body items-center text-center gap-6">
+            <div class="w-full flex justify-center">
+              <div class="hover-3d w-full max-w-xs">
+                <figure class="rounded-2xl overflow-hidden bg-base-200">
+                  <img src={logo} alt="3D card" class="w-full h-full object-contain p-4" />
+                </figure>
+                <!-- 8 empty divs needed for the 3D effect -->
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-primary">
+                BBQ Chicken Pocket
+              </h1>
+              <p class="text-base-content/70">
+                Quick tasting questionnaire — your feedback helps us improve the product.
+              </p>
+            </div>
+
+            <div class="stats stats-vertical sm:stats-horizontal bg-base-200 shadow w-full">
+              <div class="stat">
+                <div class="stat-title">Time</div>
+                <div class="stat-value text-lg">2–3 min</div>
+              </div>
+              <div class="stat">
+                <div class="stat-title">Questions</div>
+                <div class="stat-value text-lg">Short</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex justify-center md:justify-end">
+        <div class="card bg-base-100 shadow-2xl w-full max-w-xl">
+          <div class="card-body gap-6">
+            <div class="space-y-2">
+              <h2 class="text-xl md:text-2xl font-semibold">
+                Tasting Questionnaire
+              </h2>
+              <p class="text-base-content/70">
+                Please answer honestly. Your responses are used for internal product testing only.
+              </p>
+            </div>
+
+           
+
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary btn-lg" on:click={startQuestionnaire}>
+                Begin questionnaire
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
