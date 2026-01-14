@@ -17,7 +17,7 @@
             <div class="w-full flex justify-center">
               <div class="hover-3d w-full max-w-xs">
                 <figure class="rounded-2xl overflow-hidden bg-base-200">
-                  <img src={logo} alt="3D card" class="w-full h-full object-contain p-4" />
+                  <img src={logo} alt="CMI Logo" class="w-full h-full object-contain p-4" />
                 </figure>
                 <!-- 8 empty divs needed for the 3D effect -->
                 <div></div>
@@ -67,10 +67,12 @@
               </p>
             </div>
 
-           
-
             <div class="card-actions justify-end">
-              <button class="btn btn-primary btn-lg" on:click={startQuestionnaire}>
+              <button
+                class="btn btn-primary btn-lg"
+                on:click={startQuestionnaire}
+                aria-label="Start the tasting questionnaire"
+              >
                 Begin questionnaire
               </button>
             </div>
