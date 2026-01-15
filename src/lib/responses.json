@@ -1,0 +1,792 @@
+[
+    {
+        "fullName": "Ishta",
+        "age": 19,
+        "hasChildren": "No",
+        "cookingMethod": "Deep Fried",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Breakfast",
+            "Dinner"
+        ],
+        "A_taste": 3,
+        "A_likes": "It was flavorful, and tasty",
+        "A_dislikes": "Too flaky",
+        "A_appearance": 7,
+        "A_selfRelevance": 4,
+        "A_kidsRelevance": 1,
+        "A_expectation": 2,
+        "A_SelfRelevance": 3,
+        "A_Feedback": "it was good, i enjoyed it",
+        "B_taste": 5,
+        "B_likes": "spicy and flavourful",
+        "B_dislikes": "none",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": 4,
+        "B_expectation": 2,
+        "B_SelfRelevance": 3,
+        "B_Feedback": "it was okay, not impressed",
+        "timestamp": "2026-01-15T08:57:29.225Z"
+    },
+    {
+        "fullName": "Ushana Mahadew",
+        "age": 46,
+        "hasChildren": "No",
+        "cookingMethod": "Deep Fried",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 2,
+        "A_likes": "it was juicy",
+        "A_dislikes": "bland",
+        "A_appearance": 2,
+        "A_selfRelevance": 4,
+        "A_kidsRelevance": null,
+        "A_expectation": 3,
+        "A_SelfRelevance": 2,
+        "A_Feedback": null,
+        "B_taste": 9,
+        "B_likes": "sweet sauce",
+        "B_dislikes": "dry",
+        "B_appearance": 7,
+        "B_selfRelevance": 2,
+        "B_kidsRelevance": 4,
+        "B_expectation": 2,
+        "B_SelfRelevance": 4,
+        "B_Feedback": null,
+        "timestamp": "2026-01-15T09:05:45.264Z"
+    },
+    {
+        "fullName": "Jane Doe",
+        "age": 34,
+        "hasChildren": "Yes",
+        "cookingMethod": "Air Fryer",
+        "consumer": [
+            "Myself",
+            "My Kids"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 7,
+        "A_likes": "Nice smoky flavour and juicy chicken",
+        "A_dislikes": "Pastry was a bit dry",
+        "A_appearance": 6,
+        "A_selfRelevance": 4,
+        "A_kidsRelevance": 4,
+        "A_expectation": 4,
+        "A_SelfRelevance": 4,
+        "A_Feedback": "Overall enjoyable, kids liked it",
+        "B_taste": 6,
+        "B_likes": "Good flavour but less smoky",
+        "B_dislikes": "Chicken felt dry",
+        "B_appearance": 5,
+        "B_selfRelevance": 3,
+        "B_kidsRelevance": 3,
+        "B_expectation": 3,
+        "B_SelfRelevance": 3,
+        "B_Feedback": "Decent but A was better"
+    },
+    {
+        "fullName": "Mark Hill",
+        "age": 42,
+        "hasChildren": "No",
+        "cookingMethod": "Oven",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Lunch"
+        ],
+        "A_taste": 5,
+        "A_likes": "Sauce was tasty",
+        "A_dislikes": "Not very filling",
+        "A_appearance": 5,
+        "A_selfRelevance": 3,
+        "A_kidsRelevance": null,
+        "A_expectation": 3,
+        "A_SelfRelevance": 3,
+        "A_Feedback": "Average product",
+        "B_taste": 7,
+        "B_likes": "Better balance of sauce and chicken",
+        "B_dislikes": "Pastry slightly soggy",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": null,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Would buy B again"
+    },
+    {
+        "fullName": "Sarah Lin",
+        "age": 29,
+        "hasChildren": "No",
+        "cookingMethod": "Air fried",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Snack"
+        ],
+        "A_taste": 8,
+        "A_likes": "Crispy pastry and smoky BBQ flavour",
+        "A_dislikes": "Could use more sauce",
+        "A_appearance": 7,
+        "A_selfRelevance": 5,
+        "A_kidsRelevance": null,
+        "A_expectation": 5,
+        "A_SelfRelevance": 5,
+        "A_Feedback": "Really liked it",
+        "B_taste": 5,
+        "B_likes": "Pastry was crispy",
+        "B_dislikes": "Flavour was bland",
+        "B_appearance": 5,
+        "B_selfRelevance": 3,
+        "B_kidsRelevance": null,
+        "B_expectation": 3,
+        "B_SelfRelevance": 3,
+        "B_Feedback": "Not much flavour"
+    },
+    {
+        "fullName": "Tom Evans",
+        "age": 37,
+        "hasChildren": "Yes",
+        "cookingMethod": "Oven",
+        "consumer": [
+            "Myself",
+            "My Partner"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 6,
+        "A_likes": "Good portion size",
+        "A_dislikes": "Chicken a bit dry",
+        "A_appearance": 6,
+        "A_selfRelevance": 4,
+        "A_kidsRelevance": 2,
+        "A_expectation": 3,
+        "A_SelfRelevance": 3,
+        "A_Feedback": "Fine for a quick meal",
+        "B_taste": 7,
+        "B_likes": "Juicier chicken and better sauce",
+        "B_dislikes": "Slightly greasy",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": 2,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Preferred B"
+    },
+    {
+        "fullName": "Emily Ross",
+        "age": 31,
+        "hasChildren": "Yes",
+        "cookingMethod": "Air Fryer",
+        "consumer": [
+            "My Kids"
+        ],
+        "occasion": [
+            "Snack"
+        ],
+        "A_taste": 7,
+        "A_likes": "Kids liked the taste",
+        "A_dislikes": "Too smoky for kids",
+        "A_appearance": 6,
+        "A_selfRelevance": 3,
+        "A_kidsRelevance": 4,
+        "A_expectation": 4,
+        "A_SelfRelevance": 3,
+        "A_Feedback": "Good but a bit strong",
+        "B_taste": 8,
+        "B_likes": "Milder flavour and crispy pastry",
+        "B_dislikes": "Nothing major",
+        "B_appearance": 7,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": 5,
+        "B_expectation": 5,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Kids preferred B"
+    },
+    {
+        "fullName": "Luke Martin",
+        "age": 45,
+        "hasChildren": "No",
+        "cookingMethod": "Microwave",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Lunch"
+        ],
+        "A_taste": 4,
+        "A_likes": "Quick to prepare",
+        "A_dislikes": "Soggy pastry and bland taste",
+        "A_appearance": 4,
+        "A_selfRelevance": 2,
+        "A_kidsRelevance": null,
+        "A_expectation": 2,
+        "A_SelfRelevance": 2,
+        "A_Feedback": "Wouldn’t buy again",
+        "B_taste": 5,
+        "B_likes": "Better texture",
+        "B_dislikes": "Still a bit bland",
+        "B_appearance": 5,
+        "B_selfRelevance": 3,
+        "B_kidsRelevance": null,
+        "B_expectation": 3,
+        "B_SelfRelevance": 3,
+        "B_Feedback": "Slight improvement"
+    },
+    {
+        "fullName": "Natalie King",
+        "age": 26,
+        "hasChildren": "No",
+        "cookingMethod": "Air Fryer",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Snack"
+        ],
+        "A_taste": 9,
+        "A_likes": "Great BBQ flavour and crispy pastry",
+        "A_dislikes": "None",
+        "A_appearance": 8,
+        "A_selfRelevance": 5,
+        "A_kidsRelevance": null,
+        "A_expectation": 5,
+        "A_SelfRelevance": 5,
+        "A_Feedback": "Loved it",
+        "B_taste": 7,
+        "B_likes": "Good flavour",
+        "B_dislikes": "Less crispy",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": null,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Still good"
+    },
+    {
+        "fullName": "Ben Carter",
+        "age": 39,
+        "hasChildren": "Yes",
+        "cookingMethod": "Oven",
+        "consumer": [
+            "Myself",
+            "My Kids"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 6,
+        "A_likes": "Smoky taste",
+        "A_dislikes": "Dry pastry",
+        "A_appearance": 6,
+        "A_selfRelevance": 3,
+        "A_kidsRelevance": 3,
+        "A_expectation": 3,
+        "A_SelfRelevance": 3,
+        "A_Feedback": "Okay",
+        "B_taste": 7,
+        "B_likes": "More sauce and juicier",
+        "B_dislikes": "Messy to eat",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": 4,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Better than A"
+    },
+    {
+        "fullName": "Olivia Brown",
+        "age": 33,
+        "hasChildren": "No",
+        "cookingMethod": "Air fryer",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Lunch"
+        ],
+        "A_taste": 8,
+        "A_likes": "Juicy chicken and good portion",
+        "A_dislikes": "A bit sweet",
+        "A_appearance": 7,
+        "A_selfRelevance": 5,
+        "A_kidsRelevance": null,
+        "A_expectation": 5,
+        "A_SelfRelevance": 5,
+        "A_Feedback": "Would buy",
+        "B_taste": 6,
+        "B_likes": "Nice pastry",
+        "B_dislikes": "Less flavour",
+        "B_appearance": 6,
+        "B_selfRelevance": 3,
+        "B_kidsRelevance": null,
+        "B_expectation": 3,
+        "B_SelfRelevance": 3,
+        "B_Feedback": "A was better"
+    },
+    {
+        "fullName": "Chris Wilson",
+        "age": 48,
+        "hasChildren": "Yes",
+        "cookingMethod": "Oven",
+        "consumer": [
+            "My Partner"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 5,
+        "A_likes": "Decent flavour",
+        "A_dislikes": "Not filling",
+        "A_appearance": 5,
+        "A_selfRelevance": 3,
+        "A_kidsRelevance": 2,
+        "A_expectation": 3,
+        "A_SelfRelevance": 3,
+        "A_Feedback": "Average",
+        "B_taste": 6,
+        "B_likes": "More filling",
+        "B_dislikes": "Pastry slightly dry",
+        "B_appearance": 5,
+        "B_selfRelevance": 3,
+        "B_kidsRelevance": 2,
+        "B_expectation": 3,
+        "B_SelfRelevance": 3,
+        "B_Feedback": "Slightly better"
+    },
+    {
+        "fullName": "Aaron White",
+        "age": 36,
+        "hasChildren": "No",
+        "cookingMethod": "Oven",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 3,
+        "A_likes": "Quick to cook",
+        "A_dislikes": "Very bland and dry pastry",
+        "A_appearance": 4,
+        "A_selfRelevance": 2,
+        "A_kidsRelevance": null,
+        "A_expectation": 2,
+        "A_SelfRelevance": 2,
+        "A_Feedback": "Would not buy again",
+        "B_taste": 7,
+        "B_likes": "Good flavour and crispy pastry",
+        "B_dislikes": "Slightly greasy",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": null,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Much better than A"
+    },
+{
+        "fullName": "Hannah Moore",
+        "age": 28,
+        "hasChildren": "No",
+        "cookingMethod": "Air Fryer",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Lunch"
+        ],
+        "A_taste": 2,
+        "A_likes": "Nothing stood out",
+        "A_dislikes": "Dry chicken and bland flavour",
+        "A_appearance": 3,
+        "A_selfRelevance": 1,
+        "A_kidsRelevance": null,
+        "A_expectation": 1,
+        "A_SelfRelevance": 1,
+        "A_Feedback": "Disappointing",
+        "B_taste": 8,
+        "B_likes": "Juicy chicken and nice BBQ flavour",
+        "B_dislikes": "None",
+        "B_appearance": 7,
+        "B_selfRelevance": 5,
+        "B_kidsRelevance": null,
+        "B_expectation": 5,
+        "B_SelfRelevance": 5,
+        "B_Feedback": "Would buy B"
+    },
+{
+        "fullName": "Paul Turner",
+        "age": 44,
+        "hasChildren": "Yes",
+        "cookingMethod": "Oven",
+        "consumer": [
+            "Myself",
+            "My Kids"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 3,
+        "A_likes": "Kids ate some of it",
+        "A_dislikes": "Too smoky for kids and dry pastry",
+        "A_appearance": 4,
+        "A_selfRelevance": 2,
+        "A_kidsRelevance": 1,
+        "A_expectation": 2,
+        "A_SelfRelevance": 2,
+        "A_Feedback": "Not kid friendly",
+        "B_taste": 7,
+        "B_likes": "Kids liked the flavour",
+        "B_dislikes": "Messy",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": 4,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Family preferred B"
+    },
+{
+        "fullName": "Rachel Adams",
+        "age": 32,
+        "hasChildren": "No",
+        "cookingMethod": "Microwave",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Snack"
+        ],
+        "A_taste": 2,
+        "A_likes": "Easy snack",
+        "A_dislikes": "Soggy pastry and no flavour",
+        "A_appearance": 3,
+        "A_selfRelevance": 1,
+        "A_kidsRelevance": null,
+        "A_expectation": 1,
+        "A_SelfRelevance": 1,
+        "A_Feedback": "Wouldn’t buy",
+        "B_taste": 6,
+        "B_likes": "Better texture",
+        "B_dislikes": "Still not amazing",
+        "B_appearance": 5,
+        "B_selfRelevance": 3,
+        "B_kidsRelevance": null,
+        "B_expectation": 3,
+        "B_SelfRelevance": 3,
+        "B_Feedback": "Acceptable"
+    },
+{
+        "fullName": "Daniel Price",
+        "age": 41,
+        "hasChildren": "Yes",
+        "cookingMethod": "Air Fryer",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Lunch"
+        ],
+        "A_taste": 4,
+        "A_likes": "Smoky smell",
+        "A_dislikes": "Dry chicken and not filling",
+        "A_appearance": 4,
+        "A_selfRelevance": 2,
+        "A_kidsRelevance": 2,
+        "A_expectation": 2,
+        "A_SelfRelevance": 2,
+        "A_Feedback": "Average at best",
+        "B_taste": 8,
+        "B_likes": "Juicy and filling",
+        "B_dislikes": "None",
+        "B_appearance": 7,
+        "B_selfRelevance": 5,
+        "B_kidsRelevance": 3,
+        "B_expectation": 5,
+        "B_SelfRelevance": 5,
+        "B_Feedback": "Would definitely buy B"
+    },
+{
+        "fullName": "Laura Jenkins",
+        "age": 27,
+        "hasChildren": "No",
+        "cookingMethod": "Air fryer",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Snack"
+        ],
+        "A_taste": 1,
+        "A_likes": "Nothing",
+        "A_dislikes": "Dry pastry, bland, disappointing",
+        "A_appearance": 2,
+        "A_selfRelevance": 1,
+        "A_kidsRelevance": null,
+        "A_expectation": 1,
+        "A_SelfRelevance": 1,
+        "A_Feedback": "Worst of the two",
+        "B_taste": 7,
+        "B_likes": "Good flavour",
+        "B_dislikes": "Slightly greasy",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": null,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Much nicer"
+    },
+{
+        "fullName": "Steve Nolan",
+        "age": 50,
+        "hasChildren": "Yes",
+        "cookingMethod": "Oven",
+        "consumer": [
+            "Myself",
+            "My Partner"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 3,
+        "A_likes": "Okay size",
+        "A_dislikes": "Dry and bland",
+        "A_appearance": 4,
+        "A_selfRelevance": 2,
+        "A_kidsRelevance": 2,
+        "A_expectation": 2,
+        "A_SelfRelevance": 2,
+        "A_Feedback": "Would not buy",
+        "B_taste": 6,
+        "B_likes": "Better balance of flavour",
+        "B_dislikes": "Pastry a bit dry",
+        "B_appearance": 5,
+        "B_selfRelevance": 3,
+        "B_kidsRelevance": 2,
+        "B_expectation": 3,
+        "B_SelfRelevance": 3,
+        "B_Feedback": "Preferred B"
+    },
+{
+        "fullName": "Megan Lee",
+        "age": 35,
+        "hasChildren": "No",
+        "cookingMethod": "Air Fryer",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Lunch"
+        ],
+        "A_taste": 2,
+        "A_likes": "Quick meal",
+        "A_dislikes": "Dry chicken and no sauce",
+        "A_appearance": 3,
+        "A_selfRelevance": 1,
+        "A_kidsRelevance": null,
+        "A_expectation": 1,
+        "A_SelfRelevance": 1,
+        "A_Feedback": "Not enjoyable",
+        "B_taste": 8,
+        "B_likes": "Saucy and juicy",
+        "B_dislikes": "None",
+        "B_appearance": 7,
+        "B_selfRelevance": 5,
+        "B_kidsRelevance": null,
+        "B_expectation": 5,
+        "B_SelfRelevance": 5,
+        "B_Feedback": "Would buy regularly"
+    },
+{
+        "fullName": "Andrew Scott",
+        "age": 38,
+        "hasChildren": "Yes",
+        "cookingMethod": "Oven",
+        "consumer": [
+            "Myself",
+            "My Kids"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 4,
+        "A_likes": "Smoky flavour",
+        "A_dislikes": "Too strong for kids",
+        "A_appearance": 4,
+        "A_selfRelevance": 2,
+        "A_kidsRelevance": 1,
+        "A_expectation": 2,
+        "A_SelfRelevance": 2,
+        "A_Feedback": "Kids didn’t like it",
+        "B_taste": 7,
+        "B_likes": "Milder flavour kids liked",
+        "B_dislikes": "None",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": 4,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Better for families"
+    },
+{
+        "fullName": "Sophie Grant",
+        "age": 30,
+        "hasChildren": "No",
+        "cookingMethod": "Air fryer",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Snack"
+        ],
+        "A_taste": 3,
+        "A_likes": "Smells okay",
+        "A_dislikes": "Dry pastry and bland filling",
+        "A_appearance": 4,
+        "A_selfRelevance": 2,
+        "A_kidsRelevance": null,
+        "A_expectation": 2,
+        "A_SelfRelevance": 2,
+        "A_Feedback": "Would skip next time",
+        "B_taste": 6,
+        "B_likes": "Crispy and better flavour",
+        "B_dislikes": "A bit greasy",
+        "B_appearance": 5,
+        "B_selfRelevance": 3,
+        "B_kidsRelevance": null,
+        "B_expectation": 3,
+        "B_SelfRelevance": 3,
+        "B_Feedback": "Acceptable option"
+    },
+{
+        "fullName": "James Cooper",
+        "age": 47,
+        "hasChildren": "Yes",
+        "cookingMethod": "Microwave",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Lunch"
+        ],
+        "A_taste": 2,
+        "A_likes": "Fast",
+        "A_dislikes": "Soggy pastry and bland taste",
+        "A_appearance": 3,
+        "A_selfRelevance": 1,
+        "A_kidsRelevance": 2,
+        "A_expectation": 1,
+        "A_SelfRelevance": 1,
+        "A_Feedback": "Poor experience",
+        "B_taste": 5,
+        "B_likes": "Slightly better texture",
+        "B_dislikes": "Still average",
+        "B_appearance": 4,
+        "B_selfRelevance": 2,
+        "B_kidsRelevance": 2,
+        "B_expectation": 2,
+        "B_SelfRelevance": 2,
+        "B_Feedback": "Marginally better"
+    },
+{
+        "fullName": "Emma Ford",
+        "age": 34,
+        "hasChildren": "No",
+        "cookingMethod": "Oven",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 3,
+        "A_likes": "Nothing special",
+        "A_dislikes": "Dry and not filling",
+        "A_appearance": 4,
+        "A_selfRelevance": 2,
+        "A_kidsRelevance": null,
+        "A_expectation": 2,
+        "A_SelfRelevance": 2,
+        "A_Feedback": "Below expectations",
+        "B_taste": 7,
+        "B_likes": "More filling and better taste",
+        "B_dislikes": "None",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": null,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Would choose B"
+    },
+{
+        "fullName": "Michael Reed",
+        "age": 40,
+        "hasChildren": "Yes",
+        "cookingMethod": "Air Fryer",
+        "consumer": [
+            "Myself",
+            "My Partner"
+        ],
+        "occasion": [
+            "Dinner"
+        ],
+        "A_taste": 4,
+        "A_likes": "Smoky flavour",
+        "A_dislikes": "Dry chicken",
+        "A_appearance": 5,
+        "A_selfRelevance": 3,
+        "A_kidsRelevance": 2,
+        "A_expectation": 2,
+        "A_SelfRelevance": 2,
+        "A_Feedback": "Just okay",
+        "B_taste": 8,
+        "B_likes": "Juicy and tasty",
+        "B_dislikes": "None",
+        "B_appearance": 7,
+        "B_selfRelevance": 5,
+        "B_kidsRelevance": 3,
+        "B_expectation": 5,
+        "B_SelfRelevance": 5,
+        "B_Feedback": "Clear winner"
+    },
+{
+        "fullName": "Chloe Bennett",
+        "age": 25,
+        "hasChildren": "No",
+        "cookingMethod": "Air fryer",
+        "consumer": [
+            "Myself"
+        ],
+        "occasion": [
+            "Snack"
+        ],
+        "A_taste": 1,
+        "A_likes": "Nothing",
+        "A_dislikes": "Dry, bland, disappointing",
+        "A_appearance": 2,
+        "A_selfRelevance": 1,
+        "A_kidsRelevance": null,
+        "A_expectation": 1,
+        "A_SelfRelevance": 1,
+        "A_Feedback": "Would not recommend",
+        "B_taste": 7,
+        "B_likes": "Good flavour",
+        "B_dislikes": "Slightly greasy",
+        "B_appearance": 6,
+        "B_selfRelevance": 4,
+        "B_kidsRelevance": null,
+        "B_expectation": 4,
+        "B_SelfRelevance": 4,
+        "B_Feedback": "Much better than A"
+    }
+]

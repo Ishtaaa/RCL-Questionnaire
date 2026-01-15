@@ -68,7 +68,11 @@
       const requiredQuestions = questions.filter((q) => q.required);
       const missingFields = requiredQuestions.filter((q) => {
         const answer = answers[q.id];
-        return !answer || (Array.isArray(answer) && answer.length === 0);
+        if (answer === null || answer === undefined) return true;
+        if (typeof answer === 'string') return answer.trim().length === 0;
+        if (Array.isArray(answer)) return answer.length === 0;
+        // numbers (e.g., rating) are valid as long as not null/undefined
+        return false;
       });
 
       if (missingFields.length > 0) {
@@ -83,14 +87,24 @@
         timestamp: new Date().toISOString()
       };
 
-      // Here you would typically send the data to your backend
-      console.log('Form submission:', submissionData);
+      // Send data to backend endpoint that writes to responses.json
+      const res = await fetch('/api/save-response', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(submissionData)
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to save response');
+      }
 
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       alert('Thank you! Your responses have been submitted successfully.');
-      
+
       // Reset form
       answers = {};
       hasChildren = null;
@@ -120,12 +134,12 @@
             {#if question.id === 'hasChildren' && question.type === 'radio'}
               <!-- Special handling for children question -->
               <div class="form-control">
-                <label class="label">
+                <div class="label">
                   <span class="label-text font-medium">{question.label}</span>
                   {#if question.required}
                     <span class="text-error">*</span>
                   {/if}
-                </label>
+                </div>
                 <div class="flex gap-6">
                   {#each question.options as option}
                     <label class="label cursor-pointer gap-2">
@@ -194,9 +208,9 @@
                   required={question.required}
                 />
                 <datalist id="cooking-methods">
-                  <option value="Air Fried" />
-                  <option value="Deep Fried" />
-                  <option value="Baked" />
+                  <option value="Air Fried"></option>
+                  <option value="Deep Fried"></option>
+                  <option value="Baked"></option>
                 </datalist>
               </div>
             {:else if question.type === 'text'}
@@ -241,12 +255,12 @@
               </div>
             {:else if question.type === 'radio'}
               <div class="form-control">
-                <label class="label">
+                <div class="label">
                   <span class="label-text font-medium">{question.label}</span>
                   {#if question.required}
                     <span class="text-error">*</span>
                   {/if}
-                </label>
+                </div>
                 <div class="flex gap-6">
                   {#each question.type === 'radio' ? question.options : [] as option}
                     <label class="label cursor-pointer gap-2">
@@ -265,12 +279,12 @@
               </div>
             {:else if question.type === 'checkbox'}
               <div class="form-control">
-                <label class="label">
+                <div class="label">
                   <span class="label-text font-medium">{question.label}</span>
                   {#if question.required}
                     <span class="text-error">*</span>
                   {/if}
-                </label>
+                </div>
                 <div class="flex flex-col gap-3">
                   {#each question.options as option}
                     <label class="flex items-center gap-2 cursor-pointer">
@@ -293,12 +307,12 @@
               </div>
             {:else if question.type === 'rating'}
               <div class="form-control">
-                <label class="label">
+                <div class="label">
                   <span class="label-text font-medium">{question.label}</span>
                   {#if question.required}
                     <span class="text-error">*</span>
                   {/if}
-                </label>
+                </div>
                 <div class="flex gap-2">
                   {#each Array(question.scale) as _, i}
                     <button

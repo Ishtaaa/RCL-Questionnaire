@@ -36,7 +36,9 @@
                 BBQ Chicken Pocket
               </h1>
               <p class="text-base-content/70">
-                Quick tasting questionnaire — your feedback helps us improve the product.
+                You were required to try 2 BBQ flavours (BBQ A and BBQ B)<br>
+                Please try A first and then move onto B 
+
               </p>
             </div>
 
