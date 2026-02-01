@@ -1,0 +1,20 @@
+[build]
+  command = "npm run build"
+  publish = ".svelte-kit"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Netlify Functions configuration
+[functions]
+  node_bundler = "esbuild"
+
+# Environment variables (set these in Netlify dashboard)
+# DATABASE_URL should be set in Netlify Dashboard > Site Settings > Environment Variables
+
+# Redirects for SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+

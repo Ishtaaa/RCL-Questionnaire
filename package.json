@@ -11,7 +11,13 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"migrate": "tsx scripts/migrate-json-to-db.ts",
+		"db:init": "tsx scripts/init-db.ts",
+		"db:export": "tsx scripts/export-responses-to-json.ts"
+	},
+	"dependencies": {
+		"@neondatabase/serverless": "^0.9.0"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.4.0",
@@ -34,6 +40,7 @@
 		"svelte": "^5.45.6",
 		"svelte-check": "^4.3.4",
 		"tailwindcss": "^4.1.17",
+		"tsx": "^4.19.2",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.48.1",
 		"vite": "^7.2.6"
