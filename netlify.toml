@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
-  publish = ".svelte-kit"
+  publish = ".svelte-kit/output/client"
+  functions = ".netlify/functions"
 
 [build.environment]
   NODE_VERSION = "20"
@@ -9,7 +10,7 @@
 [functions]
   node_bundler = "esbuild"
 
-# Note: Redirects should be in static/_redirects file, not here
+# Note: _redirects and _headers files should be in the root directory
 # Environment variables should be set in Netlify Dashboard > Site Settings > Environment Variables
 # Required: DATABASE_URL (your Neon PostgreSQL connection string)
 
