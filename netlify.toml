@@ -12,9 +12,4 @@
 # Environment variables (set these in Netlify dashboard)
 # DATABASE_URL should be set in Netlify Dashboard > Site Settings > Environment Variables
 
-# Redirects for SPA
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
