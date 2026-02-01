@@ -9,7 +9,7 @@
 [functions]
   node_bundler = "esbuild"
 
-# Environment variables (set these in Netlify dashboard)
-# DATABASE_URL should be set in Netlify Dashboard > Site Settings > Environment Variables
-
+# Note: Redirects should be in static/_redirects file, not here
+# Environment variables should be set in Netlify Dashboard > Site Settings > Environment Variables
+# Required: DATABASE_URL (your Neon PostgreSQL connection string)
 

@@ -6,15 +6,19 @@
 import { neon } from '@neondatabase/serverless';
 import type { Question } from '../types';
 
-// Get database URL from environment
-const DATABASE_URL = process.env.DATABASE_URL || process.env.NETLIFY_DATABASE_URL;
-
-if (!DATABASE_URL) {
-  throw new Error('DATABASE_URL or NETLIFY_DATABASE_URL environment variable is required');
+// Get database URL from environment (optional - allows fallback to JSON)
+function getDatabaseUrl(): string | null {
+  return process.env.DATABASE_URL || process.env.NETLIFY_DATABASE_URL || null;
 }
 
-// Initialize Neon client
-const sql = neon(DATABASE_URL);
+// Initialize Neon client lazily (only when needed)
+function getSql() {
+  const DATABASE_URL = getDatabaseUrl();
+  if (!DATABASE_URL) {
+    throw new Error('DATABASE_URL or NETLIFY_DATABASE_URL environment variable is required. Database operations are not available.');
+  }
+  return neon(DATABASE_URL);
+}
 
 export interface ResponseData {
   [key: string]: string | number | string[] | null;
@@ -36,6 +40,7 @@ export const db = {
    * Initialize questions in database from questions.ts
    */
   async initializeQuestions(questions: Question[], surveyId: number = 1): Promise<void> {
+    const sql = getSql();
     try {
       for (let i = 0; i < questions.length; i++) {
         const q = questions[i];
@@ -87,6 +92,7 @@ export const db = {
     responseData: ResponseData,
     surveyId: number = 1
   ): Promise<{ id: number; submitted_at: Date }> {
+    const sql = getSql();
     try {
       // Insert response record
       const [response] = await sql`
@@ -139,6 +145,7 @@ export const db = {
    * Get all responses for a survey
    */
   async getResponses(surveyId: number = 1): Promise<StoredResponse[]> {
+    const sql = getSql();
     try {
       const responses = await sql`
         SELECT 
@@ -215,6 +222,7 @@ export const db = {
    * Get response count for a survey
    */
   async getResponseCount(surveyId: number = 1): Promise<number> {
+    const sql = getSql();
     try {
       const [result] = await sql`
         SELECT COUNT(*) as count
@@ -232,6 +240,7 @@ export const db = {
    * Get all questions for a survey
    */
   async getQuestions(surveyId: number = 1): Promise<Question[]> {
+    const sql = getSql();
     try {
       const questions = await sql`
         SELECT 
