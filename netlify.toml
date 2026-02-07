@@ -10,7 +10,14 @@
 [functions]
   node_bundler = "esbuild"
 
-# Note: _redirects and _headers files should be in the root directory
-# Environment variables should be set in Netlify Dashboard > Site Settings > Environment Variables
-# Required: DATABASE_URL (your Neon PostgreSQL connection string)
+# Security headers (mirrors root _headers; applies to all responses)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Netlify DB: with @netlify/neon installed, Netlify sets NETLIFY_DATABASE_URL automatically.
+# Optional: set DATABASE_URL manually for a different Neon (or other Postgres) instance.
 

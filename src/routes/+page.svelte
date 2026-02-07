@@ -1,10 +1,5 @@
 <script lang="ts">
   import logo from '$lib/assets/CMI_logo.png';
-  import { goto } from '$app/navigation';
-
-  function startQuestionnaire() {
-    goto('/questionnaire');
-  }
 </script>
 
 <main class="min-h-screen bg-base-200">
@@ -70,13 +65,13 @@
             </div>
 
             <div class="card-actions justify-end">
-              <button
+              <a
+                href="/questionnaire"
                 class="btn btn-primary btn-lg"
-                on:click={startQuestionnaire}
                 aria-label="Start the tasting questionnaire"
               >
                 Begin questionnaire
-              </button>
+              </a>
             </div>
           </div>
         </div>

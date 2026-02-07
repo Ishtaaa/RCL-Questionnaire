@@ -1,23 +1,25 @@
 /**
  * Database service layer for Neon PostgreSQL
- * Handles all database operations for the questionnaire
+ * Uses Netlify DB (@netlify/neon) when NETLIFY_DATABASE_URL is set (e.g. on Netlify),
+ * or DATABASE_URL for local / manual Neon setup.
  */
 
-import { neon } from '@neondatabase/serverless';
+import { neon } from '@netlify/neon';
 import type { Question } from '../types';
 
-// Get database URL from environment (optional - allows fallback to JSON)
-function getDatabaseUrl(): string | null {
-  return process.env.DATABASE_URL || process.env.NETLIFY_DATABASE_URL || null;
-}
-
-// Initialize Neon client lazily (only when needed)
+/** Lazy Neon client: uses Netlify DB (NETLIFY_DATABASE_URL) or explicit DATABASE_URL */
 function getSql() {
-  const DATABASE_URL = getDatabaseUrl();
-  if (!DATABASE_URL) {
-    throw new Error('DATABASE_URL or NETLIFY_DATABASE_URL environment variable is required. Database operations are not available.');
+  const explicit = process.env.DATABASE_URL;
+  if (explicit) {
+    return neon(explicit);
   }
-  return neon(DATABASE_URL);
+  // Netlify DB sets NETLIFY_DATABASE_URL automatically when @netlify/neon is installed
+  if (process.env.NETLIFY_DATABASE_URL) {
+    return neon();
+  }
+  throw new Error(
+    'No database configured. Set DATABASE_URL (local) or use Netlify DB (NETLIFY_DATABASE_URL is set automatically on Netlify).'
+  );
 }
 
 export interface ResponseData {

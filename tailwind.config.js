@@ -5,7 +5,7 @@ import typography from '@tailwindcss/typography';
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{html,js,svelte,ts}', './src/app.html'],
   theme: {
     extend: {},
   },
@@ -55,5 +55,9 @@ export default {
         },
       },
     ],
+    darkTheme: false,
+    base: true,
+    styled: true,
+    utils: true,
   },
 };
