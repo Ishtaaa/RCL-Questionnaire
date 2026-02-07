@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from '$app/navigation';
   import { questions } from '$lib/questions';
   import type { FormAnswers } from '$lib/types';
 
@@ -100,15 +101,7 @@
         throw new Error('Failed to save response');
       }
 
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      alert('Thank you! Your responses have been submitted successfully.');
-
-      // Reset form
-      answers = {};
-      hasChildren = null;
-      childrenAges = [];
+      await goto('/questionnaire/thanks');
     } catch (error) {
       console.error('Submission error:', error);
       alert('An error occurred while submitting. Please try again.');
