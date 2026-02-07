@@ -9,6 +9,10 @@ export default {
   theme: {
     extend: {},
   },
+  // Ensure DaisyUI component classes are always generated (avoids purge issues)
+  safelist: [
+    { pattern: /^(btn|card|input|label|checkbox|radio|stat|loading|divider|form-control|label-text|card-body|card-actions|btn-primary|btn-lg|btn-outline|btn-square|btn-sm|input-bordered|stat-title|stat-value|min-h-screen|max-w-|text-primary|text-base-content|shadow-2xl|bg-base-)/ },
+  ],
   plugins: [forms, typography, daisyui],
   daisyui: {
     themes: [
@@ -59,5 +63,7 @@ export default {
     base: true,
     styled: true,
     utils: true,
+    // Apply rusks by default so theme works even if data-theme is missed
+    defaultTheme: 'rusks',
   },
 };

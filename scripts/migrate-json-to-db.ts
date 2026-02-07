@@ -1,8 +1,10 @@
 /**
  * Migration script to migrate existing JSON responses to Neon database
  * Run this once to migrate your existing data
+ * Loads .env so DATABASE_URL or NETLIFY_DATABASE_URL is available
  */
 
+import 'dotenv/config';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { db } from '../src/lib/db/index.js';

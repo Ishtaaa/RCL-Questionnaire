@@ -1,8 +1,10 @@
 /**
  * Export responses from database to JSON file
  * Useful for backup or for the analysis notebook
+ * Loads .env so DATABASE_URL or NETLIFY_DATABASE_URL is available
  */
 
+import 'dotenv/config';
 import { writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { db } from '../src/lib/db/index.js';

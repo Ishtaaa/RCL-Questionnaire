@@ -38,12 +38,23 @@ After the database exists (and is claimed if you want it long-term):
   ```
   (Get the connection string from Netlify: Site → Environment variables → `NETLIFY_DATABASE_URL`, or from the Neon dashboard.)
 
-- **Option B – Local one-off**  
-  Set `DATABASE_URL` or `NETLIFY_DATABASE_URL` in `.env` (or in the shell), then:
+- **Option B – Local one-off (recommended)**  
+  Put your Neon URL in a `.env` file in the project root (no spaces around `=`):
+  ```
+  DATABASE_URL=postgresql://user:pass@host/db?sslmode=require
+  ```
+  Then run:
   ```bash
   npm run db:init
   ```
   Use `npm run migrate` if you have existing data in `src/lib/responses.json` to import.
+
+- **PowerShell (one-off without .env)**  
+  In PowerShell, set the variable then run the script (use one line or run `$env:DATABASE_URL = "..."` first):
+  ```powershell
+  $env:DATABASE_URL = "postgresql://user:pass@host/db?sslmode=require"; npm run db:init
+  ```
+  Do not use `VAR=value command`; that is bash syntax and will not work in PowerShell.
 
 ## How the app uses the database
 
