@@ -1,3 +1,4 @@
+# SvelteKit + adapter-netlify: adapter writes client bundle here; do not use "build/"
 [build]
   command = "npm run build"
   publish = ".svelte-kit/output/client"
