@@ -1,17 +1,21 @@
-# SvelteKit + adapter-netlify: adapter writes client bundle here; do not use "build/"
 [build]
   command = "npm run build"
-  publish = ".svelte-kit/output/client"
-  functions = ".netlify/functions"
-
+  publish = ".svelte-kit/netlify"
+  
 [build.environment]
   NODE_VERSION = "20"
 
-# Netlify Functions configuration
 [functions]
+  directory = ".netlify/functions"
   node_bundler = "esbuild"
+  
+# This tells Netlify to route all requests through the SvelteKit function
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/render"
+  status = 200
+  force = true
 
-# Security headers (mirrors root _headers; applies to all responses)
 [[headers]]
   for = "/*"
   [headers.values]
@@ -19,6 +23,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Netlify DB: with @netlify/neon installed, Netlify sets NETLIFY_DATABASE_URL automatically.
-# Optional: set DATABASE_URL manually for a different Neon (or other Postgres) instance.
-
+[[headers]]
+  for = "/_app/immutable/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
