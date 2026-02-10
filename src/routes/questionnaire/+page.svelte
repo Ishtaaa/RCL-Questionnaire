@@ -186,18 +186,27 @@
                   <span class="label-text font-medium">{question.label}</span>
                   {#if question.required}<span class="text-error">*</span>{/if}
                 </div>
-                <div class="flex gap-2 flex-wrap">
+                <div class="flex gap-3 flex-wrap">
                   {#each Array(question.scale) as _, i}
                     <button
                       type="button"
-                      class="btn btn-circle btn-outline"
+                      class="btn btn-circle transition-all duration-200 transform hover:scale-110"
                       class:btn-primary={answers[question.id] === i + 1}
+                      class:btn-outline={answers[question.id] !== i + 1}
+                      class:btn-lg={answers[question.id] === i + 1}
                       on:click={() => (answers[question.id] = i + 1)}
+                      aria-label="Rate {i + 1}"
+                      aria-pressed={answers[question.id] === i + 1}
                     >
-                      {i + 1}
+                      <span class="text-lg font-semibold">{i + 1}</span>
                     </button>
                   {/each}
                 </div>
+                {#if answers[question.id] !== null}
+                  <p class="text-sm text-base-content/70 mt-3">
+                    ✓ You selected: <span class="font-semibold">{answers[question.id]} out of {question.scale}</span>
+                  </p>
+                {/if}
               </div>
             {/if}
           {/each}
