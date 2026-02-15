@@ -47,7 +47,7 @@
             <div class="card-actions justify-end">
               <a
                 href="/questionnaire"
-                class="btn btn-primary btn-lg"
+                class="btn btn-primary btn-lg text-primary-content"
                 aria-label="Start the tasting questionnaire"
               >
                 Begin questionnaire
